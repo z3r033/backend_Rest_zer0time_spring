@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/zer0time?createDatabaseIfNotExist=true&characterEncoding=utf8&useUnicode=true&sessionVariables=storage_engine%3DInnoDB&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: saad
+    password: saad
+    platform: mysql 
+    initialization-mode: always
+  servlet:
+    multipart:
+       enabled: true
+       file-size-threshold: 2KB
+       max-file-size: 200MB
+       max-request-size: 215MB
+  file.upload-dir: /home/zer0/uploads
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+    open-in-view: false
+   
+token_sercret: gfdgdfgf9i4jsdfsdfsdf83nf10
